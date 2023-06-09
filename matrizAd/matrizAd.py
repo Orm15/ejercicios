@@ -18,17 +18,17 @@ def paint(rows,cont):
         print(rows[cont])
         paint(rows,cont + 1)
 
-# paint(rows,0)
+## paint(rows,0)
 
 def createMat(rows):
-    mat = [[]]  # Inicializamos con una lista vacía
+    mat = [[]]  
     cont = -1
     nodA = 0
     nodR = 0
     for fil in rows:
         if cont == -1:
             numNod = fil[0]
-            mat = [[0] * numNod for _ in range(numNod)]  # Creamos la matriz de adyacencia vacía
+            mat = [[0] * numNod for _ in range(numNod)]  
         else:
             if cont % 2 == 0:
                 nodA = fil[0]
